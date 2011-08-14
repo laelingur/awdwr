@@ -77,7 +77,7 @@
   background: #141;
 }
 
-#side a {
+#side a, #side span {
   color: #bfb;
   font-size: small;
 }
