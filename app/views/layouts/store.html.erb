@@ -2,7 +2,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-	<title>pragprog books online store</title>
+	<title>Pragprog books online store</title>
 	<%= stylesheet_link_tag "depot", :media => "all" %>
 </head>
 <body id="store">
@@ -19,6 +19,9 @@
 			<span class""><%= Time.now %></span>
 		</div>
 		<div id = "main">
+		   <% if flash[:notice] %>
+		      <div id="notice"><%= flash[:notice] %></div>
+		   <% end%>
 			<%= yield :layout %>
 		</div>
 	</div>
